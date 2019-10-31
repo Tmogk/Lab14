@@ -5,13 +5,8 @@ public class RockPlayer extends Player {
 	private String userChoice;
 
 	public Roshambo generateRoshambo() {
-		if (userChoice.equalsIgnoreCase("Rock")) {
-			return Roshambo.rock;
-		} else if (userChoice.equalsIgnoreCase("Paper")) {
-			return Roshambo.rock;
-		} else {
-			return Roshambo.rock;
-		}
+		return Roshambo.rock;
+
 	}
 
 	public RockPlayer() {

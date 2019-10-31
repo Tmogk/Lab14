@@ -1,3 +1,5 @@
+//Author: Tyler Mogk
+
 package co.grandcircus;
 
 import java.util.Scanner;
@@ -51,8 +53,9 @@ public class RoshamboApp {
 		Roshambo r1 = player1.generateRoshambo();
 		Roshambo r2 = player2.generateRoshambo();
 
-		if (r1.equals("Rock") && r2.equals("Scissors") || r1.equals("Scissors") && r2.equals("Paper")
-				|| r1.equals("Paper") && r2.equals("Rock")) {
+		if (r1.toString().equals("You chose rock") && r2.toString().equals("You chose scissors")
+				|| r1.toString().equals("You chose Scissors") && r2.toString().equals("You chose paper")
+				|| r1.toString().equals("You chose paper") && r2.toString().equals("You chose rock")) {
 			System.out.println("Win");
 		} else if (r1.equals(r2)) {
 			System.out.println("Loss");
